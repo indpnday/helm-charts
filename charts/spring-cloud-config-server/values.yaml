@@ -63,4 +63,5 @@ secrets:
 # Github deploy key auth method. Base64 coded known_hosts and private key.
 # githubKnownHosts: ""
 # githubPrivateKey: ""
-
+# Encrypt key
+# encryptKey: ""

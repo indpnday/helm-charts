@@ -56,9 +56,9 @@ The following table lists the configurable parameters of the spring-cloud-config
 | `config.gitSearchpath`                     | git search path                           | `{application}`                    |
 | `secrets.gitUsername`                      | git username                              | `{}`                               |
 | `secrets.gitPassword`                      | git password                              | `{}`                               |
-| `secrets.githubKnownHosts                  | known_hosts content (base64)              | `{}`                               |
+| `secrets.githubKnownHosts`                 | known_hosts content (base64)              | `{}`                               |
 | `secrets.githubPrivateKey`                 | id_rsa content (base64)                   | `{}`                               |
-
+| `secrets.encryptKey`                       | Encrypt Key                               | `{}`                               |
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`. For example:
 

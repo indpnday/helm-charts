@@ -70,6 +70,13 @@ spec:
               secretKeyRef:
                 name: "{{ include "spring-cloud-config-server.fullname" . }}"
                 key: "gitPassword"
+          {{- if .Values.secrets.encryptKey }}
+          - name: ENCRYPT_KEY
+            valueFrom:
+              secretKeyRef:
+                name: "{{ include "spring-cloud-config-server.fullname" . }}"
+                key: "encryptKey"
+          {{- end}}
           {{- if .Values.extraEnv }}
             {{- toYaml .Values.extraEnv | nindent 10 }}
           {{- end }}
